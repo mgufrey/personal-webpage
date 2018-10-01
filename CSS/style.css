@@ -4,9 +4,10 @@ body, html {
 	line-height: 1.6;
 	letter-spacing: 5px;
 	text-align: center;
-	margin:-50px;
+  margin: 0;
 	overflow: hidden;
 	height:100%;
+  color: #4E4E4E;
 }
 /*BACKGROUND ANIMATION AND CONTENT*/
 .bg-wrapper {
@@ -14,10 +15,11 @@ body, html {
   font-size: 0;
   line-height: 1;
   margin-left: -15%;
+  margin-top: -5%;
   padding-right: 15%;
   width: 100%;
   display: inline-flex;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 span {
@@ -51,19 +53,69 @@ span {
     /*transform: translate(33%, 0);*/
   }
 }
+
 .main-txt{
 	width: 1000px;
 	height: auto;
 	position: absolute;
-	top: 50%;
-	left: 0;
+	top: 30%;
+	left: 25%;
 }
 
-#main-lnks{
+h2{
+  font-size: 50px;
+}
+.main-txt h2, p{
+  font-family: 'PT Sans', sans-serif;
+}
+.main-txt p{
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.main-lnks{
 	font-weight: 200;
 	display: flex;
 }
 
 #main-lnks a{
 	margin-right: 50px;
+  text-decoration: none;
+  font-weight: 300;
+  color: #4E4E4E;
 }
+
+.menu-cont{
+  position: fixed;
+  top: 87%;
+  width: 100%;
+  height: 126px;
+  z-index: 5;
+}
+#menu-lnks a{
+  display: flex;
+  margin-left: 50px;
+  font-size: 16px;
+  font-kerning: 66px;
+  text-decoration: none;
+  color:#4e4e4e;
+}
+#menu-lnks a:hover{
+  text-decoration: all;
+}
+
+.menu-lnks-cont{
+  display: flex;
+  position: relative;
+  top: 43%;
+  margin-left: 5%;
+}
+.ln-spc{
+  height: 2px;
+  width: 1032px;
+  background-color: #95989A;
+  position:relative;
+  top:15px;
+  left: 70px;
+}
+

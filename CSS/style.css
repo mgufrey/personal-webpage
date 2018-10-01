@@ -59,7 +59,21 @@ span {
 	height: auto;
 	position: absolute;
 	top: 30%;
-	left: 25%;
+}
+
+@media (max-width: 1919px){
+  .main-txt{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+  }
+}
+
+@media (min-width: 1920px){
+  .main-txt{
+    left: 25%;
+  }
 }
 
 h2{

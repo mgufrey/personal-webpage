@@ -1,136 +1,146 @@
-body, html {
- font-family: Roboto;
- font-size: 24px;
- line-height: 1.6;
- letter-spacing: 5px;
- text-align: center;
- margin: 0;
- overflow: hidden;
- height:100%;
- color: #4E4E4E;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/*BACKGROUND ANIMATION AND CONTENT*/
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-family: Roboto;
+  color: #4E4E4E;
+}
+
+a {
+  color: inherit;
+}
+
+h2 {
+  font-family: 'PT Sans', 'sans-serif';
+}
+
 .bg-wrapper {
-  color: #Ffffff;
-  font-size: 0;
-  line-height: 1;
-  margin-left: -15%;
-  margin-top: -5%;
-  padding-right: 15%;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bg-wrapper span {
+  font-size: 30vw;
+  color: #fff;
+  animation: move 2s ease-in-out infinite;
+}
+
+.bg-wrapper span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.bg-wrapper span:nth-child(3) {
+  animation-delay: 1.0s;
+}
+
+.bg-wrapper span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.bg-wrapper span + span {
+  margin-left: 5vmin;
+}
+
+.main-txt {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.main-txt h2 {
+  font-size: 50px;
+}
+
+.main-txt p {
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.main-lnks {
+  margin: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-lnks a {
+  padding: 25px 50px;
+  text-decoration: none;
+}
+
+.menu-cont {
+  margin: 0 50px;
+  background-image: linear-gradient(to bottom, white calc(50% - 1px), gray calc(50% - 1px), gray calc(50% + 1px), white calc(50% - 1px));
+}
+
+.menu-lnks-cont {
+  padding: 0 25px;
   display: inline-flex;
+  flex-wrap: wrap;
+  background-color: #fff;
 }
 
-span {
- font-size: 653px;
- font-weight: 1000;
- display: inline;
- margin-right: 9%;
- animation: move 30s ease-in-out infinite;
- &:nth-child(2) { animation-delay: 0.5s; }
- &:nth-child(3) { animation-delay: 1.0s; }
- &:nth-child(4) { animation-delay: 1.5s; }
+.menu-cont a {
+  padding: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  font-kerning: 66px;
 }
 
-/*ANIMATION BY CHRIS COYIER https://codepen.io/chriscoyier/pen/RRxQZg*/
+@media screen and (max-width: 480px) {
+  .bg-wrapper {
+    display: none;
+  }
+
+  .main-txt h2 {
+    font-size: 30px;
+  }
+
+  .menu-cont {
+    margin-top: 50px;
+  }
+
+  .menu-cont a {
+    flex: 1 1 auto;
+  }
+}
 
 @keyframes move {
-  0% {
-    /*transform: translate(-33%, 0);*/
+  5% {
+    text-shadow: 0 1px 1px rgba(1, 1, 1, 0.15)
   }
-  5%{
-  	text-shadow: 0 1px 1px rgba(1, 1, 1, 0.15)
-  }
+
   50% {
     text-shadow: 0 55px 75px rgba(1, 1, 1, 0.15);
     color: #F8F8F8;
   }
-  95%{
-  	text-shadow: 0 1px 1px rgba(1, 1, 1, 0.15)
+
+  95% {
+    text-shadow: 0 1px 1px rgba(1, 1, 1, 0.15)
   }
+
   100% {
-    /*transform: translate(33%, 0);*/
+    transform: translate(33%, 0);
   }
 }
-
-.main-txt{
-	width: 1000px;
-	height: auto;
-	position: absolute;
-	top: 30%;
-}
-
-@media (max-width: 1919px){
-  .main-txt{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 30%;
-  }
-}
-
-@media (min-width: 1920px){
-  .main-txt{
-    left: 25%;
-  }
-}
-
-h2 {
- font-size: 50px;
-}
-
-.main-txt p {
- font-size: 16px;
- letter-spacing: 0;
-}
-
-.main-lnks {
- font-weight: 200;
- display: flex;
-}
-
-#main-lnks a {
- margin-right: 50px;
- text-decoration: none;
- font-weighti: 300;
- color: #4E4E4E;
-}
-
-.menu-cont {
- position: fixed;
- top: 87%;
- width: 100%;
- height: 126px;
- z-index: 5;
-}
-
-#menu-lnks a {
- display: flex;
- margin-left: 50px;
- font-size: 16px;
- font-kerning: 66px;
- text-decoration: none;
- color:#4e4e4e;
-}
-
-#menu-lnks a:hover {
-  text-decoration: all;
-}
-
-.menu-lnks-cont {
-  display: flex;
-  position: relative;
-  top: 43%;
-  margin-left: 5%;
-}
-
-.ln-spc {
-  height: 2px;
-  width: 1032px;
-  background-color: #95989A;
-  position:relative;
-  top:15px;
-  left: 70px;
-}
-

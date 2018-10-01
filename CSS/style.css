@@ -59,7 +59,8 @@ span {
 	height: auto;
 	position: absolute;
 	top: 30%;
-	left: 25%;
+	left: 50%;
+	margin-left: -500px;
 }
 
 h2{
@@ -118,4 +119,3 @@ h2{
   top:15px;
   left: 70px;
 }
-

@@ -76,19 +76,6 @@ h2 {
   letter-spacing: 0;
 }
 
-.main-lnks {
-  margin: 25px 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.main-lnks a {
-  padding: 25px 50px;
-  text-decoration: none;
-}
-
 .menu-cont {
   margin: 0 50px;
   background-image: linear-gradient(to bottom, white calc(50% - 1px), gray calc(50% - 1px), gray calc(50% + 1px), white calc(50% - 1px));
@@ -106,6 +93,21 @@ h2 {
   text-decoration: none;
   font-size: 16px;
   font-kerning: 66px;
+}
+
+.skillset {
+    width: 100%;
+}
+.skills {
+    color: inherit;
+    font-size: x-large !important;
+    padding: 0 25px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin: 25px 0;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 480px) {

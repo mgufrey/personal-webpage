@@ -104,7 +104,7 @@ h2 {
     padding: 0 25px;
     display: inline-flex;
     flex-wrap: wrap;
-    background-color: #fff;
+   /* background-color: #fff;*/
     margin: 25px 0;
     align-items: center;
     justify-content: center;

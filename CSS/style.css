@@ -25,7 +25,7 @@ h2 {
 
 .bg-wrapper {
   position: absolute;
-  top: 0;
+  top: -45%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -38,7 +38,8 @@ h2 {
 .bg-wrapper span {
   font-size: 30vw;
   color: #fff;
-  animation: move 2s ease-in-out infinite;
+  margin:0 70px;
+  animation: move 2s ease-in-out forwards;
 }
 
 .bg-wrapper span:nth-child(2) {
@@ -129,6 +130,16 @@ h2 {
 }
 
 @keyframes move {
+ /*SECOND ANIMATION*/
+ 5% {
+    text-shadow: 0 1px 1px rgba(1, 1, 1, 0.15)
+  }
+  100% {
+    text-shadow: 0 55px 75px rgba(1, 1, 1, 0.15);
+    color: #F8F8F8;
+  }
+ /*
+ FIRST ANIMATION TRANSITION TEST
   5% {
     text-shadow: 0 1px 1px rgba(1, 1, 1, 0.15)
   }
@@ -144,5 +155,5 @@ h2 {
 
   100% {
     transform: translate(33%, 0);
-  }
+  }*/
 }

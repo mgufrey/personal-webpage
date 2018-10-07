@@ -14,13 +14,17 @@ body {
   font-family: Roboto;
   color: #4E4E4E;
 }
-
+label, p {
+  font-size: 16px;
+}
 a {
   color: inherit;
 }
 
 h2 {
   font-family: 'PT Sans', 'sans-serif';
+  text-align: right;
+  font-size: 50px;
 }
 
 .bg-wrapper {
@@ -33,6 +37,7 @@ h2 {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  z-index: 0;
 }
 
 .bg-wrapper span {
@@ -66,10 +71,11 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 5%;
+  z-index: 1;
 }
 
 .main-txt h2 {
-  font-size: 50px;
+  text-align: center;
 }
 
 .main-txt p {
@@ -80,6 +86,7 @@ h2 {
 .menu-cont {
   margin: 0 50px;
   background-image: linear-gradient(to bottom, white calc(50% - 1px), gray calc(50% - 1px), gray calc(50% + 1px), white calc(50% - 1px));
+  z-index: 2;
 }
 
 .menu-lnks-cont {
@@ -156,4 +163,7 @@ h2 {
   100% {
     transform: translate(33%, 0);
   }*/
+}
+.wrap{
+
 }

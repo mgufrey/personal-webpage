@@ -1,0 +1,47 @@
+html{
+	margin:0;
+	padding:0;
+}
+p{
+	text-align: right;
+}
+/* BACK BUTTON CODE*/
+.bk-btn{
+	width:35px;
+	height:35px;
+	-webkit-border-radius: 45px;
+	border-radius: 45px;
+	position: fixed;
+	overflow: hidden;
+	border:1px;
+	border-style: solid;
+	left: 16px;
+	top: 16px;
+}
+.bk-arrow {
+	border: 1px;
+	border-style: solid;
+	border-top: hidden;
+	border-right: hidden;
+	width:30%;
+	height:30%;
+	position: absolute;
+	top: 35%;
+	left: 40%;
+	transform: rotate(45deg);
+}
+/*THIS WILL CHANGE DEPENDING ON THE PROJECT-THERE WILL BE AN IMAGE OR ANIMATION HERE*/
+.cover-page {
+	background:#3f3f3f;
+	width: 100%;
+	display: block;
+	padding: 15% 25%;
+	color:#fff;
+}
+/*THIS WILL BE IN PRODUCTION, SINCE THERE WILL BE ALOT OF THINGS COMING, FONTS, IMAGES, PROTOTYPES, ETC.*/
+.proj-content-wrap{
+	margin: 5% 10%;
+}
+.content-section{
+	margin: 0 0 10% 0;
+}

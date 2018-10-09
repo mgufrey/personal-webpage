@@ -1,0 +1,137 @@
+.ttl-cont {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 25px;
+  position: sticky;
+  top:18%;
+}
+/*PORT STANDS FOR PORTFOLIO*/
+.port-cont{
+	display: flex;
+	flex: 1 1 auto;
+	flex direction: row;
+}
+.skills-list{
+	text-align: right;
+	list-style-type: none;
+	float: right;
+	width: 20%;
+	height: 120px;
+  	position: sticky;
+  	top:26.5%;
+}
+.list-box-cont{
+	display:block;
+	max-width: 1260px;
+	float: left;
+	width: 80%;
+	flex-wrap: all;
+}
+
+
+input[type="radio"] {
+    display:none;
+}
+
+label{
+	float: left;
+	cursor: pointer;
+	opacity: .56;
+	width:300px;
+	height: 22px;
+	transition: .2s;
+}
+label:hover{
+	font-size: 18px;
+	opacity: 1;
+	transition: .2s;
+	transform-origin: 0 50%;
+}
+
+
+input[type="radio"][id="gr-ds"]:checked + label {
+	font-size: 18px;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+input[type="radio"][id="gr-ds"]:checked ~ .illus, input[type="radio"][id="gr-ds"]:checked ~ .ui-ux, input[type="radio"][id="gr-ds"]:checked ~ .anim {
+	width:0;
+	height: 0;	
+	margin:0;
+	padding:0;
+	opacity: 0;
+}
+
+input[type="radio"][id="illus"]:checked + label {
+	font-size: 18px;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+input[type="radio"][id="illus"]:checked ~ .gr-ds, input[type="radio"][id="illus"]:checked ~ .ui-ux, input[type="radio"][id="illus"]:checked ~ .anim {
+ 	width:0;
+	height: 0;
+	margin:0;
+	padding:0;
+	opacity: 0;
+}
+
+input[type="radio"][id="ui-ux"]:checked + label {
+	font-size: 18px;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+input[type="radio"][id="ui-ux"]:checked ~ .gr-ds, input[type="radio"][id="ui-ux"]:checked ~ .illus, input[type="radio"][id="ui-ux"]:checked ~ .anim {
+ 	width:0;
+	height: 0;
+	margin:0;
+	padding:0;
+	opacity: 0;
+}
+
+input[type="radio"][id="anim"]:checked + label {
+	font-size: 18px;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+input[type="radio"][id="anim"]:checked ~ .gr-ds, input[type="radio"][id="anim"]:checked ~ .illus, input[type="radio"][id="anim"]:checked ~ .ui-ux {
+	width:0;
+	height: 0;
+	margin:0;
+	opacity: 0;
+}
+.box{
+	width: 45%;
+	height: 280px;
+	float:left;
+	transition:all .5s;
+	margin-right: 1.5%;
+	margin-bottom: 1.5%;
+	background-color: #000;
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
+	overflow: hidden;
+}
+.box img{
+	width: 100%;
+	height: auto;
+	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transition:1.5s;
+
+}
+.box img:hover{
+	width: 120%;
+	opacity: .16;
+	transition:1.5s;
+	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+
+}

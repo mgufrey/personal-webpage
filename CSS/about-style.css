@@ -1,0 +1,23 @@
+html{
+	overflow: hidden;
+}
+p{
+	font-size: 18px;
+}
+.abt-wrap{
+	width: auto;
+	display: flex;
+}
+.picture-cont{
+	width:35%;
+	height: 850px;
+	background-color: #efefef;
+	top: 0;
+	margin: 0 9%;
+	margin-top: -13%;
+}
+.content-cont{
+	width: 50%;
+	text-align: right;
+	border-color: #000;
+}

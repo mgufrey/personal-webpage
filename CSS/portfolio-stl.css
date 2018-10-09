@@ -1,3 +1,6 @@
+.wrap{
+	margin: 10% 10% 0 10%;
+}
 .ttl-cont {
   position: relative;
   flex: 1 1 auto;
@@ -14,30 +17,16 @@
 	flex: 1 1 auto;
 	flex direction: row;
 }
+.skills-list{
+	text-align: right;
+	list-style-type: none;
+}
 .list-box-cont{
 	display: inline-block;
 	max-width: 1260px;
 	overflow: scroll;
 }
-.box{
-	width: 600px;
-	height: 320px;
-	float:left;
-	transition:all 1s;
-	margin-right: 1%;
-	margin-bottom: 1%;
-	padding:0.5%;
-	background-color: #000;
-}
-.skills-list{
-	text-align: right;
-	list-style-type: none;
-	max-width: 200px;
 
-}
-.wrap{
-	margin: 10% 10% 0 10%;
-}
 
 input[type="radio"] {
     display:none;
@@ -47,10 +36,14 @@ label{
 	float: left;
 	cursor: pointer;
 	opacity: 56%;
+	width:300px;
+	height: auto;
 }
 
 input[type="radio"][id="gr-ds"]:checked + label {
-  background-color: blue;
+	font-size: 18px;
+	transition: .5s;
+
 }
 
 input[type="radio"][id="gr-ds"]:checked ~ .illus, input[type="radio"][id="gr-ds"]:checked ~ .ui-ux, input[type="radio"][id="gr-ds"]:checked ~ .anim {
@@ -62,7 +55,8 @@ input[type="radio"][id="gr-ds"]:checked ~ .illus, input[type="radio"][id="gr-ds"
 }
 
 input[type="radio"][id="illus"]:checked + label {
-  background-color: blue;
+	font-size: 18px;
+	transition: .5s;
 }
 
 input[type="radio"][id="illus"]:checked ~ .gr-ds, input[type="radio"][id="illus"]:checked ~ .ui-ux, input[type="radio"][id="illus"]:checked ~ .anim {
@@ -74,7 +68,8 @@ input[type="radio"][id="illus"]:checked ~ .gr-ds, input[type="radio"][id="illus"
 }
 
 input[type="radio"][id="ui-ux"]:checked + label {
-  background-color: blue;
+	font-size: 18px;
+	transition: .5s;
 }
 
 input[type="radio"][id="ui-ux"]:checked ~ .gr-ds, input[type="radio"][id="ui-ux"]:checked ~ .illus, input[type="radio"][id="ui-ux"]:checked ~ .anim {
@@ -86,7 +81,8 @@ input[type="radio"][id="ui-ux"]:checked ~ .gr-ds, input[type="radio"][id="ui-ux"
 }
 
 input[type="radio"][id="anim"]:checked + label {
-  background-color: blue;
+	font-size: 18px;
+	transition: .5s;
 }
 
 input[type="radio"][id="anim"]:checked ~ .gr-ds, input[type="radio"][id="anim"]:checked ~ .illus, input[type="radio"][id="anim"]:checked ~ .ui-ux {
@@ -95,4 +91,14 @@ input[type="radio"][id="anim"]:checked ~ .gr-ds, input[type="radio"][id="anim"]:
 	margin:0;
 	padding:0;
 	opacity: 0;
+}
+.box{
+	width: 600px;
+	height: 320px;
+	float:right;
+	transition:all 1s;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	padding:0.5%;
+	background-color: #000;
 }

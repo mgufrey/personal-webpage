@@ -56,11 +56,12 @@ input[type="radio"][id="gr-ds"]:checked + label {
 }
 
 input[type="radio"][id="gr-ds"]:checked ~ .illus, input[type="radio"][id="gr-ds"]:checked ~ .ui-ux, input[type="radio"][id="gr-ds"]:checked ~ .anim {
-	width:0;
-	height: 0;	
+	/*width: 0;*/
+	height: 0;
 	margin:0;
 	padding:0;
 	opacity: 0;
+	animation: reduce 1s ease-in-out;
 }
 
 input[type="radio"][id="illus"]:checked + label {
@@ -70,11 +71,12 @@ input[type="radio"][id="illus"]:checked + label {
 }
 
 input[type="radio"][id="illus"]:checked ~ .gr-ds, input[type="radio"][id="illus"]:checked ~ .ui-ux, input[type="radio"][id="illus"]:checked ~ .anim {
- 	width:0;
+	/*width: 0;*/
 	height: 0;
 	margin:0;
 	padding:0;
 	opacity: 0;
+	animation: reduce 1s ease-in-out;
 }
 
 input[type="radio"][id="ui-ux"]:checked + label {
@@ -84,11 +86,12 @@ input[type="radio"][id="ui-ux"]:checked + label {
 }
 
 input[type="radio"][id="ui-ux"]:checked ~ .gr-ds, input[type="radio"][id="ui-ux"]:checked ~ .illus, input[type="radio"][id="ui-ux"]:checked ~ .anim {
- 	width:0;
+	/*width: 0;*/
 	height: 0;
 	margin:0;
 	padding:0;
 	opacity: 0;
+	animation: reduce 1s ease-in-out;
 }
 
 input[type="radio"][id="anim"]:checked + label {
@@ -98,21 +101,50 @@ input[type="radio"][id="anim"]:checked + label {
 }
 
 input[type="radio"][id="anim"]:checked ~ .gr-ds, input[type="radio"][id="anim"]:checked ~ .illus, input[type="radio"][id="anim"]:checked ~ .ui-ux {
-	width:0;
+	/*width: 0;*/
 	height: 0;
 	margin:0;
+	padding:0;
 	opacity: 0;
+	transform-origin: 50% 50%;
+	animation: reduce 1s ease-in-out;
 }
+@keyframes reduce{
+	85% {
+		width:45%;
+		margin-right: 1.5%;
+		margin-bottom: 1.5%;
+	}
+	100%{
+		width: 0;
+		margin:0;
+		padding:0;
+	}
+
+}
+
+@keyframes amplify{
+	55%{
+		width: 0;
+	}
+	100%{
+		width: 45%;
+
+	}
+}
+
 .box{
 	width: 45%;
 	height: 280px;
 	float:left;
-	transition:all .5s;
+	transition: all 0.5s;
 	margin-right: 1.5%;
 	margin-bottom: 1.5%;
 	background-color: #000;
 	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
 	overflow: hidden;
+	transform-origin: 50% 0%;
+
 }
 .box img{
 	width: 100%;

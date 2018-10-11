@@ -45,26 +45,19 @@
 <script src="js/barba.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$('document').ready(function(){
-		var transEffect = Barba.BaseTransition.extend({
-			start: function(){
-				this.newContainerLoading.then(val => this.fadeInNewContent($(this.newContainer)));
-			},
-			fadeInNewContent: function(nc) {
-				nc.hide();
-				var _this = this;
-				$$(this.oldContainer).fadeOut(1000).promise().done(() => {
-					nc.css('visibility','visible');
-					nc.fadeIn(1000, function(){
-						_this.done();
-					})
-				});
-			}
-		});
+		var HideShowTransition = Barba.BaseTransition.extend({
+		  start: function() {
+		    this.newContainerLoading.then(this.finish.bind(this));
+		  },
 
+		  finish: function() {
+		    document.body.scrollTop = 0;
+		    this.done();
+		  }
+		});
 		Barba.Pjax.getTransition = function() {
-			return transEffect;
-		}
-		Barba.Pjax.start();
+		  return HideShowTransition;
+		};		
 	})
 </script>
 </body>

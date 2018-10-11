@@ -4,6 +4,9 @@ html{
 p{
 	font-size: 18px;
 }
+h2{
+	margin-bottom: 25px;
+}
 .abt-wrap{
 	width: auto;
 	display: flex;

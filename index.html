@@ -6,33 +6,70 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/about-style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/portfolio-stl.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
 </head>
 <body>
-	<div class="bg-wrapper bg-wrapper-1">
-		<span>M</span>
-		<span>A</span>
-		<span>G</span>
-		<span>F</span>
-	</div>
-	<div class="main-txt">
-		<h2>Hey there, welcome to my page, here <br> is what I do and love to do</h2>
-		<div class="skillset">
-			<p class="skills">Graphic Design</p>
-			<p class="skills">Ui/Ux</p>
-			<p class="skills">Illustration</p>
-		</div>
-		<p>By the way, I&apos;m Mauricio Guti&eacute;rrez</p>
-	</div>
-	<div class="menu-cont" id="menu-lnks">
-		<div class="menu-lnks-cont">
-			<a href="index.">MAGF</a>
-			<a href="portfolio.html">PORTFOLIO</a>
-			<a href="about.html">ABOUT</a>
-			<a href="contact.html">CONTACT</a>
-		</div>
-	</div>
+	<div id="barba-wrapper">
+	  <div class="barba-container">
 
+		<div class="bg-wrapper bg-wrapper-1">
+			<span>M</span>
+			<span>A</span>
+			<span>G</span>
+			<span>F</span>
+		</div>
+		<div class="main-txt">
+			<h2>Hey there, welcome to my page, here <br> is what I do and love to do</h2>
+			<div class="skillset">
+				<p class="skills">Graphic Design</p>
+				<p class="skills">Ui/Ux</p>
+				<p class="skills">Illustration</p>
+			</div>
+			<p>By the way, I&apos;m Mauricio Guti&eacute;rrez</p>
+		</div>
+
+
+
+		<div class="menu-cont" id="menu-lnks">
+			<div class="menu-lnks-cont">
+				<a href="index.html">MAGF</a>
+				<a href="portfolio.html">PORTFOLIO</a>
+				<a href="about.html">ABOUT</a>
+				<a href="contact.html">CONTACT</a>
+			</div>
+		</div>
+
+	  </div>
+	</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/barba.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$('document').ready(function(){
+		var transEffect = Barba.BaseTransition.extend({
+			start: function(){
+				this.newContainerLoading.then(val => this.fadeInNewContent($(this.newContainer)));
+			},
+			fadeInNewContent: function(nc) {
+				nc.hide();
+				var _this = this;
+				$$(this.oldContainer).fadeOut(1000).promise().done(() => {
+					nc.css('visibility','visible');
+					nc.fadeIn(1000, function(){
+						_this.done();
+					})
+				});
+			}
+		});
+
+		Barba.Pjax.getTransition = function() {
+			return transEffect;
+		}
+		Barba.Pjax.start();
+	})
+</script>
 </body>
 </html>

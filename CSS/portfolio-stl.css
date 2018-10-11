@@ -1,32 +1,29 @@
+.prt{
+	margin-right: 
+}
 .ttl-cont {
-  position: relative;
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 25px;
-  position: sticky;
+  position: fixed;
   top:18%;
+  right: 10%;
 }
 /*PORT STANDS FOR PORTFOLIO*/
 .port-cont{
 	display: flex;
-	flex: 1 1 auto;
-	flex direction: row;
+	height: 600px;
+	padding: 50px 0;
 }
 .skills-list{
 	text-align: right;
 	list-style-type: none;
-	float: right;
 	width: 20%;
 	height: 120px;
-  	position: sticky;
+  	position: fixed;
   	top:26.5%;
+  	right: 5.65%;
 }
 .list-box-cont{
-	display:block;
+	display: block;
 	max-width: 1260px;
-	float: left;
 	width: 80%;
 	flex-wrap: all;
 }

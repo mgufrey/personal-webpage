@@ -9,28 +9,62 @@
 </head>
 <body>
 	<!-- CONTENT STARTS HERE-->
-	<div class="wrap">
-		<div class="abt-wrap">
-			<div class="picture-cont">
-				
-			</div>
-			<div class="content-cont">
-				<h2>About</h2>
-				<p>
-					Ground round turkey kevin ham hock, andouille burgdoggen pork chop. Boudin shank meatloaf porchetta, kevin strip steak swine fatback ham hock sausage ribeye frankfurter burgdoggen. Flank prosciutto ham frankfurter meatloaf, shank boudin andouille hamburger cupim cow. Shank sirloin kevin, beef ribs andouille prosciutto boudin bresaola short ribs burgdoggen pork chop filet mignon turducken. Kevin biltong short ribs picanha flank frankfurter pork, filet mignon beef ribs shank spare ribs shoulder tenderloin. Rump tri-tip tenderloin corned beef porchetta kielbasa pig short loin venison boudin pancetta.
-				</p>
+<div id="barba-wrapper">
+	<div class="barba-container">
+		<div class="wrap">
+			<div class="abt-wrap">
+				<div class="picture-cont">
+					
+				</div>
+				<div class="content-cont">
+					<h2>About</h2>
+					<p>
+						Ground round turkey kevin ham hock, andouille burgdoggen pork chop. Boudin shank meatloaf porchetta, kevin strip steak swine fatback ham hock sausage ribeye frankfurter burgdoggen. Flank prosciutto ham frankfurter meatloaf, shank boudin andouille hamburger cupim cow. Shank sirloin kevin, beef ribs andouille prosciutto boudin bresaola short ribs burgdoggen pork chop filet mignon turducken. Kevin biltong short ribs picanha flank frankfurter pork, filet mignon beef ribs shank spare ribs shoulder tenderloin. Rump tri-tip tenderloin corned beef porchetta kielbasa pig short loin venison boudin pancetta.
+					</p>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- END OF CONTENT-->
-	<!-- THIS IS THE MENU-->
-	<div class="menu-cont" id="menu-lnks">
-		<div class="menu-lnks-cont">
-			<a href="index.html">MAGF</a>
-			<a href="portfolio.html">PORTFOLIO</a>
-			<a href="about.html">ABOUT</a>
-			<a href="contact.html">CONTACT</a>
+
+		<!-- END OF CONTENT-->
+		<!-- THIS IS THE MENU-->
+		<div class="menu-cont" id="menu-lnks">
+			<div class="menu-lnks-cont">
+				<a href="index.html">MAGF</a>
+				<a href="portfolio.html">PORTFOLIO</a>
+				<a href="about.html">ABOUT</a>
+				<a href="contact.html">CONTACT</a>
+			</div>
 		</div>
+
 	</div>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/barba.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$('document').ready(function(){
+		var transEffect = Barba.BaseTransition.extend({
+			start: function(){
+				this.newContainerLoading.then(val => this.fadeInNewContent($(this.newContainer)));
+			},
+			fadeInNewContent: function(nc) {
+				nc.hide();
+				var _this = this;
+				$$(this.oldContainer).fadeOut(1000).promise().done(() => {
+					nc.css('visibility','visible');
+					nc.fadeIn(1000, function(){
+						_this.done();
+					})
+				});
+			}
+		});
+
+		Barba.Pjax.getTransition = function() {
+			return transEffect;
+		}
+		Barba.Pjax.start();
+	})
+</script>
 </body>
 </html>

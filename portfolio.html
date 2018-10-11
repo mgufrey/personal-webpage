@@ -8,7 +8,11 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 </head>
 <body>
-	<div class="wrap">
+
+<div id="barba-wrapper">
+  <div class="barba-container">
+
+	<div class="wrap prt">
 		<div class="ttl-cont">
 			<h2>Portfolio</h2>
 		</div>
@@ -19,6 +23,18 @@
 				<input type="radio" id="illus" name="skils" />
 				<input type="radio" id="ui-ux" name="skils" />
 				<input type="radio" id="anim" name="skils" />
+				<div class="box anim"> <a href="project-page.html"><img src="https://media.giphy.com/media/tLvRIsrAlSmnS/giphy.gif"></a></div>
+				<div class="box gr-ds"><a href="project-page.html"><img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/23197467/original/933ca31e5d8c30e3dedb84c222e6152b0252f749/design-an-impressive-logo.png"></a></div>
+				<div class="box illus"><a href="project-page.html"><img src="https://pre00.deviantart.net/db67/th/pre/f/2015/189/3/d/3d741863d49b38f26ecda3763b02e713-d90hl8c.jpg"></a></div>
+				<div class="box ui-ux"><a href="project-page.html"><img src="https://cdn-images-1.medium.com/max/2000/1*Asobnxejkl99Pde8Td1ajg.png"></a></div>
+				<div class="box anim"><a href="project-page.html"><img src="https://media3.giphy.com/media/F99PZtJC8Hxm0/giphy.gif"></a></div>
+				<div class="box gr-ds"><a href="project-page.html"><img src="https://cdn-images-1.medium.com/max/1600/0*iq1ItWV_j-WpxxmP.jpg"></a></div>
+				<div class="box anim"><a href="project-page.html"><img src="https://media.giphy.com/media/5knvo3GC5Yi4g/giphy.gif"></a></div>
+				<div class="box gr-ds"><a href="project-page.html"><img src="https://d3ui957tjb5bqd.cloudfront.net/uploads/2017/01/Swan-by-Yuri-Kartashev-560x420.jpg"></a></div>
+				<div class="box illus"><a href="project-page.html"><img src="http://2.bp.blogspot.com/-PbDaqpMGNe4/VO9yqR6QlBI/AAAAAAAAAiI/b0OAzd3UQ4s/s1600/Cita_ad.jpg"></a></div>
+				<div class="box ui-ux"><a href="project-page.html"><img src="https://cdn-images-1.medium.com/max/2000/1*PBCeYG2ftWMUab54X8q2uw.png"></a></div>
+				<div class="box anim"><a href="project-page.html"><img src="http://olegif.com/bin/gifs/00/04/87.gif"></a></div>
+				<div class="box gr-ds"><a href="project-page.html"><img src="https://cdn.shopify.com/s/files/1/0204/9436/files/hatchful-social-share_aa123b00-0ce0-412c-ba7f-dc14b9f7a342.png"></a></div>
 				<div class="box anim"> <a href="project-page.html"><img src="https://media.giphy.com/media/tLvRIsrAlSmnS/giphy.gif"></a></div>
 				<div class="box gr-ds"><a href="project-page.html"><img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/23197467/original/933ca31e5d8c30e3dedb84c222e6152b0252f749/design-an-impressive-logo.png"></a></div>
 				<div class="box illus"><a href="project-page.html"><img src="https://pre00.deviantart.net/db67/th/pre/f/2015/189/3/d/3d741863d49b38f26ecda3763b02e713-d90hl8c.jpg"></a></div>
@@ -48,9 +64,14 @@
 				
   				<label for="anim">ANIMATION</label>
 			</div>
-	
+			
+				
+			</div>
 		</div>
+
 	</div>
+
+
 	<!--MENU-->
 	<div class="menu-cont">
 		<div class="menu-lnks-cont">
@@ -60,5 +81,34 @@
 			<a href="contact.html">CONTACT</a>
 		</div>
 	</div>
+  </div>
+</div>
+	
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/barba.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$('document').ready(function(){
+		var transEffect = Barba.BaseTransition.extend({
+			start: function(){
+				this.newContainerLoading.then(val => this.fadeInNewContent($(this.newContainer)));
+			},
+			fadeInNewContent: function(nc) {
+				nc.hide();
+				var _this = this;
+				$$(this.oldContainer).fadeOut(1000).promise().done(() => {
+					nc.css('visibility','visible');
+					nc.fadeIn(1000, function(){
+						_this.done();
+					})
+				});
+			}
+		});
+
+		Barba.Pjax.getTransition = function() {
+			return transEffect;
+		}
+		Barba.Pjax.start();
+	})
+</script>
 </body>
 </html>

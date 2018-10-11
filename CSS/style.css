@@ -31,6 +31,19 @@ h2 {
 }
 .wrap{
   margin: 10%;
+  width: 100%;
+}
+#barba-wrapper{
+  height: 100%;
+  max-height: 960px;
+  width: 100%;
+  position: absolute;
+}
+.barba-container{
+  height: inherit;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 .bg-wrapper {
   position: absolute;

@@ -12,15 +12,20 @@ h2{
 	display: flex;
 }
 .picture-cont{
+	top: 0;
+
 	width:35%;
 	height: 850px;
-	background-color: #efefef;
-	top: 0;
 	margin: 0 9%;
 	margin-top: -13%;
+
+	background-color: #efefef;
+
 }
 .content-cont{
 	width: 50%;
-	text-align: right;
+	
 	border-color: #000;
+
+	text-align: right;
 }

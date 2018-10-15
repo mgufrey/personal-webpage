@@ -1,3 +1,5 @@
+
+
 .prt{
 	margin-right: 
 }
@@ -144,6 +146,7 @@ input[type="radio"][id="anim"]:checked ~ .gr-ds, input[type="radio"][id="anim"]:
 	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
 	overflow: hidden;
 	transform-origin: 50% 0%;
+	display: block;
 
 }
 .box img{

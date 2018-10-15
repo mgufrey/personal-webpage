@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 html{
     scroll-behavior: smooth;
@@ -11,6 +12,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  
   font-size: 24px;
   letter-spacing: 0.1em;
   text-align: center;
@@ -22,7 +24,12 @@ label, p {
 }
 a {
   color: inherit;
+
+  cursor: pointer;
+
+  text-decoration: none;
 }
+
 
 h2 {
   font-family: 'PT Sans', 'sans-serif';
@@ -34,14 +41,15 @@ h2 {
   width: 100%;
 }
 #barba-wrapper{
+  position: absolute;
   height: 100%;
   max-height: 960px;
   width: 100%;
-  position: absolute;
 }
 .barba-container{
-  height: inherit;
   display: flex;
+  height: inherit;
+  
   align-content: center;
   align-items: center;
 }
@@ -51,17 +59,21 @@ h2 {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  z-index: 0;
+
 }
 
 .bg-wrapper span {
+  margin:0 70px;
+
   font-size: 30vw;
   color: #fff;
-  margin:0 70px;
+  
   animation: move 2s ease-in-out forwards;
 }
 
@@ -83,13 +95,15 @@ h2 {
 
 .main-txt {
   position: relative;
+  z-index: 1;
+
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+  padding: 5%;
+
   align-items: center;
   justify-content: center;
-  padding: 5%;
-  z-index: 1;
 }
 
 .main-txt h2 {
@@ -104,8 +118,9 @@ h2 {
 .menu-cont {
   /*margin: 0 50px;*/
   background-image: linear-gradient(to bottom, white calc(50% - 1px), gray calc(50% - 1px), gray calc(50% + 1px), white calc(50% - 1px));
-  z-index: 2;
   position: fixed;
+  z-index: 2;
+
   width: 100%;
   bottom:0;
 }
@@ -114,34 +129,42 @@ h2 {
   padding: 0 25px;
   display: inline-flex;
   flex-wrap: wrap;
+
   background-color: #fff;
 }
 
 .menu-cont a {
   padding: 25px;
-  text-decoration: none;
+
+  opacity: .5;
+  
   font-size: 16px;
   font-kerning: 66px;
-  opacity: .5;
-  transition: .5s ease-in-out;
+
+  transition: .3s ease-in-out;
 }
 .menu-cont a:hover {
-  font-size: 18px;
+  padding: 10px;
+
   opacity: .87;
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
+
+  font-size: 18px;
 }
 
 .skillset {
     width: 100%;
 }
 .skills {
-    color: inherit;
-    font-size: x-large !important;
-    padding: 0 25px;
     display: inline-flex;
     flex-wrap: wrap;
+    padding: 0 25px;
     margin: 25px 0;
+    
     align-items: center;
+
+    color: inherit;
+    font-size: x-large !important;
     justify-content: center;
 }
 
@@ -165,7 +188,7 @@ h2 {
 
 @keyframes move {
  /*SECOND ANIMATION*/
- 5% {
+  5% {
     text-shadow: 0 1px 1px rgba(1, 1, 1, 0.15)
   }
   100% {

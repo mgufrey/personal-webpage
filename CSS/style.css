@@ -167,6 +167,8 @@ h2 {
     font-size: x-large !important;
     justify-content: center;
 }
+.my-name{
+}
 
 @media screen and (max-width: 480px) {
   .bg-wrapper {

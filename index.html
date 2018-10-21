@@ -35,7 +35,7 @@
 		<div class="menu-cont" id="menu-lnks">
 			<div class="menu-lnks-cont">
 				<a href="index.html">MAGF</a>
-				<a href="portfolio.html" onclick="repeat()">PORTFOLIO</a>
+				<a href="portfolio.html">PORTFOLIO</a>
 				<a href="about.html">ABOUT</a>
 				<a href="contact.html">CONTACT</a>
 			</div>
@@ -43,28 +43,10 @@
 
 	  </div>
 	</div>
-<script type="text/javascript" src="js/greensock/plugins/CSSPlugin.min.js"></script>
-<script type="text/javascript" src="js/greensock/TweenLite.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-
-	$(document).ready(function(){
-		var skillset = $(".skillset");
-		var content = $(".main-txt");
-		var myname = $(".my-name");
-
-		TweenLite.from(content, 1, {opacity:0, letterSpacing: "1em", zIndex:1000, delay:1});
-
-		TweenLite.from(skillset, 2, {opacity: 0, delay:4});
-
-		TweenLite.from(myname,1, {opacity: 0, delay:6, letterSpacing: "1em"});
-
-
-
-	});
-
-</script>
+<script type="text/javascript" src="js/magf-web.js"></script>
 
 </body>
 </html>

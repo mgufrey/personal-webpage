@@ -191,10 +191,16 @@ h2 {
 @keyframes move {
  /*SECOND ANIMATION*/
   5% {
-    text-shadow: 0 1px 1px rgba(1, 1, 1, 0.15)
+    text-shadow: 0 1px 1px rgba(1, 1, 1, 0.15);
+    -moz-text-shadow: 0 1px 1px rgba(1, 1, 1, 0.15);
+    -ms-text-shadow: 0 1px 1px rgba(1, 1, 1, 0.15);
+    -webkit-text-shadow: 0 1px 1px rgba(1, 1, 1, 0.15);
   }
   100% {
     text-shadow: 0 55px 75px rgba(1, 1, 1, 0.15);
+    -moz-text-shadow: 0 55px 75px rgba(1, 1, 1, 0.15);
+    -webkit-text-shadow: 0 55px 75px rgba(1, 1, 1, 0.15);
+    -ms-text-shadow: 0 55px 75px rgba(1, 1, 1, 0.15);
     color: #F8F8F8;
   }
  

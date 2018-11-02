@@ -143,7 +143,6 @@ input[type="radio"][id="anim"]:checked ~ .gr-ds, input[type="radio"][id="anim"]:
 	margin-right: 1.5%;
 	margin-bottom: 1.5%;
 	background-color: #000;
-	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
 	overflow: hidden;
 	transform-origin: 50% 0%;
 	display: block;
@@ -165,5 +164,6 @@ input[type="radio"][id="anim"]:checked ~ .gr-ds, input[type="radio"][id="anim"]:
 	transform-origin: 50% 50%;
 	-webkit-transform-origin: 50% 50%;
 	-ms-transform-origin: 50% 50%;
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
 
 }

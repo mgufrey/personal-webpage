@@ -1,0 +1,423 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padd",
+				"padding-top\tproperty"
+			],
+			[
+				"trans",
+				"transition\tproperty"
+			],
+			[
+				"tran",
+				"translateZ()\ttransform"
+			],
+			[
+				"pr",
+				"proj-text-wrap"
+			],
+			[
+				"pro",
+				"proj-text"
+			],
+			[
+				"box",
+				"box-img"
+			],
+			[
+				"tr",
+				"translateY()\ttransform"
+			],
+			[
+				"tra",
+				"transform\tproperty"
+			],
+			[
+				"li",
+				"line-height\tproperty"
+			],
+			[
+				"pad",
+				"padding-top\tproperty"
+			],
+			[
+				"b",
+				"border-image\tproperty"
+			],
+			[
+				"backgro",
+				"background-size\tproperty"
+			],
+			[
+				"background",
+				"background-image\tproperty"
+			],
+			[
+				"backgr",
+				"background-image\tproperty"
+			],
+			[
+				"a",
+				"anim"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"men",
+				"menu-lnks-cont"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"my",
+				"myname"
+			],
+			[
+				"wr",
+				"wrap"
+			],
+			[
+				"wra",
+				"bg-wrapper"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"j",
+				"javascript"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"paddi",
+				"padding-bottom\tproperty"
+			],
+			[
+				"margi",
+				"margin-bottom\tproperty"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"max",
+				"max-height\tproperty"
+			],
+			[
+				"in",
+				"initial\theight"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"al",
+				"align-content\tproperty"
+			],
+			[
+				"sha",
+				"box-shadow"
+			],
+			[
+				"widt",
+				"width"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"ps",
+				"position"
+			],
+			[
+				"alig",
+				"align-content"
+			],
+			[
+				"content",
+				"justify-content"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"conten",
+				"justify-content"
+			],
+			[
+				"gr",
+				"gr-ds"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"menu",
+				"menu-lnks"
+			],
+			[
+				"hhe",
+				"height"
+			],
+			[
+				"FONT",
+				"font-weight"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"width",
+				"max-width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 119.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/vedeviaje/Downloads/MAGF"
+	],
+	"file_history":
+	[
+		"/Users/vedeviaje/Downloads/MAGF/CSS/portfolio-stl.scss",
+		"/Users/vedeviaje/Downloads/MAGF/CSS/portfolio-stl2.scss.css",
+		"/Users/vedeviaje/Downloads/MAGF/CSS/portfolio-stl.scss.css",
+		"/Users/vedeviaje/Downloads/MAGF/CSS/portfolio-stl.css",
+		"/Users/vedeviaje/Downloads/MAGF/project-page.html",
+		"/Users/vedeviaje/Downloads/MAGF/CSS/style.css",
+		"/Users/vedeviaje/Downloads/MAGF/CSS/project-page-style.css",
+		"/Users/vedeviaje/Downloads/MAGF/CSS/about-style.css",
+		"/Users/vedeviaje/Downloads/MAGF/about.html",
+		"/Users/vedeviaje/Downloads/MAGF/index.html",
+		"/Users/vedeviaje/Downloads/MAGF/portfolio.html",
+		"/Users/vedeviaje/Downloads/barba/barba.js",
+		"/Users/vedeviaje/Downloads/barba/grid.js",
+		"/Users/vedeviaje/Downloads/barba/style.css",
+		"/Users/vedeviaje/Downloads/barba/4.html",
+		"/Users/vedeviaje/Downloads/barba/3.html",
+		"/Users/vedeviaje/Downloads/barba/2.html",
+		"/Users/vedeviaje/Downloads/barba/1.html",
+		"/Users/vedeviaje/Downloads/barba/index.html",
+		"/Users/vedeviaje/Downloads/MAGF/js/untitled.js",
+		"/Users/vedeviaje/Downloads/MAGF/CSS/about-style.css.html",
+		"/Users/vedeviaje/Downloads/personal-webpage-master/home-index.html",
+		"/Users/vedeviaje/Downloads/personal-webpage-master/CSS/style.css",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/ISCONSULTING/isdriver/txt/horario24hs.txt",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/ISCONSULTING/isdriver/txt/horario24hs",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/ISCONSULTING/isdriver/txt/Turno1",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/ISCONSULTING/isdriver/txt/Turno2",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/ISCONSULTING/isdriver/txt/turno3",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/PROCESO RESERVA/Nuevo/IMG/Anim/tab-scan-lic-front/demo.html",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/PROCESO RESERVA/Nuevo/seguros.txt",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/Tablet app/Texts contents/Lista_seguros.txt",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/mobi rent a car/apps/Ride-share/Launching screen/Launcher animation/mobi2_carshare_launcher_data.json",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/mobi rent a car/apps/Ride-share/Launching screen/Launcher animation/animation.svg",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/mobi rent a car/apps/Ride-share/Launching screen/Launcher animation/animation2.svg",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/PROCESO RESERVA/Nuevo/TXT/caj-num-est.txt",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/PROCESO RESERVA/Nuevo/IMG/icons/app-icons/smartphone.svg",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/PROCESO RESERVA/Nuevo/IMG/icons/app-icons/partner-benefit.svg",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/PROCESO RESERVA/Nuevo/IMG/icons/app-icons/passengers.svg",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/PROCESO RESERVA/Nuevo/IMG/Anim/scan-frente/demo.html",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/PROCESO RESERVA/Nuevo/lista-ficha",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/PROCESO RESERVA/Nuevo/lista-ficha.TXT",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/AUTOCLICK/Autoclick rent a car/APP AUTOCLICK/ANDROID/demo.html",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/AUTOCLICK/Autoclick rent a car/APP AUTOCLICK/ANDROID/data.json",
+		"/Users/vedeviaje/Downloads/social-icon-hover-effects/js/social_media.js",
+		"/Users/vedeviaje/Downloads/social-icon-hover-effects/css/social_media.css",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/MAURICIO/MUSE/TEST ANIM/css/social_media.css",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/MAURICIO/MUSE/TEST ANIM/css/social_media.js",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/MAURICIO/portafolio Mauricio/animations/bodymovin.js",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/MAURICIO/portafolio Mauricio/animations/menu.json",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/MAURICIO/portafolio Mauricio/animations/data.json",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/Tablet app/Texts contents/list names",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/Tablet app/Texts contents/Daños",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/Tablet app/Texts contents/Car stuff CONTENT",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/Tablet app/Texts contents/Car stuff",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/Tablet app/Texts contents/Equipaje",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/Tablet app/Texts contents/extras2",
+		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/APP/Tablet app/Texts contents/extras1"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "personalweb.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

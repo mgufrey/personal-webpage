@@ -6,6 +6,10 @@ p{
 }
 h2{
 	margin-bottom: 25px;
+	letter-spacing: 25px;
+	font-weight: 100;
+	text-align: left;
+	font-family: 'Josefin Sans', sans-serif;
 }
 .abt-wrap{
 	width: auto;
@@ -20,7 +24,12 @@ h2{
 	margin-top: -13%;
 
 	background-color: #efefef;
-
+	overflow: hidden;
+}
+img{
+	position: relative;
+	top:5%;
+	left: -15%;
 }
 .content-cont{
 	width: 50%;
@@ -28,4 +37,5 @@ h2{
 	border-color: #000;
 
 	text-align: right;
+
 }

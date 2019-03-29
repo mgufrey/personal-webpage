@@ -29,6 +29,7 @@ a {
   cursor: pointer;
 
   text-decoration: none;
+  mix-blend-mode: difference;
 }
 
 
@@ -117,27 +118,27 @@ h2 {
   text-align: center;
 }
 
-.main-txt p {
-  font-size: 16px;
-  letter-spacing: 0;
+.my-name {
+  text-align: center;
 }
 
 .menu-cont {
   /*margin: 0 50px;*/
-  background-image: linear-gradient(to bottom, white calc(50% - 1px), gray calc(50% - 1px), gray calc(50% + 1px), white calc(50% - 1px));
+  /*background-image: linear-gradient(to bottom, white calc(50% - 1px), gray calc(50% - 1px), gray calc(50% + 1px), white calc(50% - 1px));*/
   position: fixed;
   z-index: 2;
 
   width: 100%;
   bottom:0;
+
+  text-align: left;
 }
 
 .menu-lnks-cont {
-  padding: 0 25px;
+  padding: 0 120px;
   display: inline-flex;
   flex-wrap: wrap;
 
-  background-color: #fff;
 }
 
 .menu-cont a {
@@ -149,6 +150,9 @@ h2 {
   font-kerning: 66px;
 
   transition: .3s ease-in-out;
+  color: black;
+
+
 }
 .menu-cont a:hover {
   padding: 10px;
@@ -174,7 +178,8 @@ h2 {
     font-size: x-large !important;
     justify-content: center;
 }
-.my-name{
+.main-txt p{
+  text-align: center;
 }
 
 @media screen and (max-width: 480px) {

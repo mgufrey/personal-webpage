@@ -6,6 +6,15 @@
   top:18%;
   right: 10%;
 }
+
+h2{
+	margin-bottom: 25px;
+	letter-spacing: 25px;
+	font-weight: 100;
+	text-align: left;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
 /*PORT STANDS FOR PORTFOLIO*/
 .port-cont{
 	display: flex;
@@ -190,6 +199,7 @@ input[type="radio"][id="anim"]:checked ~ .gr-ds, input[type="radio"][id="anim"]:
 	position: relative;
 	float: left;
 	width: 45%;
+	height: 280px;
 	background-color: #000000;
 	overflow: hidden;
 	&:after{

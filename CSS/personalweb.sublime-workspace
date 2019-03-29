@@ -4,36 +4,12 @@
 		"selected_items":
 		[
 			[
-				"ce",
-				"center\ttext-align"
-			],
-			[
-				"u",
-				"ui-ux"
-			],
-			[
-				"i",
-				"illus"
-			],
-			[
-				"border",
-				"border-radius\tproperty"
-			],
-			[
-				"wid",
-				"width\tproperty"
-			],
-			[
-				"tr",
-				"translateX"
+				"padd",
+				"padding-top\tproperty"
 			],
 			[
 				"trans",
-				"transform\tproperty"
-			],
-			[
-				"padd",
-				"padding-top\tproperty"
+				"transition\tproperty"
 			],
 			[
 				"tran",
@@ -50,6 +26,10 @@
 			[
 				"box",
 				"box-img"
+			],
+			[
+				"tr",
+				"translateY()\ttransform"
 			],
 			[
 				"tra",
@@ -172,6 +152,10 @@
 				"justify-content"
 			],
 			[
+				"border",
+				"border-color"
+			],
+			[
 				"conten",
 				"justify-content"
 			],
@@ -253,21 +237,21 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/vedeviaje/Downloads/MAGF"
 	],
 	"file_history":
 	[
-		"/Users/vedeviaje/Downloads/MAGF/CSS/portfolio-stl.css",
-		"/Users/vedeviaje/Downloads/MAGF/CSS/style.css",
 		"/Users/vedeviaje/Downloads/MAGF/CSS/portfolio-stl.scss",
-		"/Users/vedeviaje/Downloads/MAGF/portfolio.html",
-		"/Users/vedeviaje/Documents/Respaldo Pablo/EUROPCAR/360 photos/testunity/EC-cars/Assets/NewBehaviourScript.cs",
 		"/Users/vedeviaje/Downloads/MAGF/CSS/portfolio-stl2.scss.css",
 		"/Users/vedeviaje/Downloads/MAGF/CSS/portfolio-stl.scss.css",
+		"/Users/vedeviaje/Downloads/MAGF/CSS/portfolio-stl.css",
 		"/Users/vedeviaje/Downloads/MAGF/project-page.html",
+		"/Users/vedeviaje/Downloads/MAGF/CSS/style.css",
 		"/Users/vedeviaje/Downloads/MAGF/CSS/project-page-style.css",
 		"/Users/vedeviaje/Downloads/MAGF/CSS/about-style.css",
 		"/Users/vedeviaje/Downloads/MAGF/about.html",
 		"/Users/vedeviaje/Downloads/MAGF/index.html",
+		"/Users/vedeviaje/Downloads/MAGF/portfolio.html",
 		"/Users/vedeviaje/Downloads/barba/barba.js",
 		"/Users/vedeviaje/Downloads/barba/grid.js",
 		"/Users/vedeviaje/Downloads/barba/style.css",
@@ -351,11 +335,6 @@
 			"sheets":
 			[
 			]
-		},
-		{
-			"sheets":
-			[
-			]
 		}
 	],
 	"incremental_find":
@@ -375,18 +354,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -442,7 +414,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 287.0,
+	"side_bar_width": 150.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

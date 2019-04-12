@@ -233,7 +233,6 @@ input[type="radio"][id="anim"]:checked ~ .gr-ds, input[type="radio"][id="anim"]:
 
 .box-img{
 	height: auto;
-	backface-visibility: hidden;
 	transform: translateZ(0);
 	transition: 750ms cubic-bezier(0.23, 1, 0.32, 1);
 	content: "";
